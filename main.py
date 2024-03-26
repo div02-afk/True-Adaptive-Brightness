@@ -16,16 +16,17 @@ def detect_os():
         return "Unknown"
 
 # Example usage
+time_delay = 3
 os_name = detect_os()
 print("Operating System:", os_name)
 
 if(os_name == "Windows"):
     while True:
         check_windows()
-        time.sleep(3)
+        time.sleep(time_delay)
 elif( os_name == "Linux"):
     print("Linux is not supported yet.")
 elif( os_name == "macOS"):
     while True:
         check_macOS()
-        time.sleep(3)
+        time.sleep(time_delay)

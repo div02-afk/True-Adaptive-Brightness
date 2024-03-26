@@ -1,5 +1,5 @@
-import subprocess
 from common import average_light_level
+import subprocess
 # Function to set brightness using AppleScript
 def set_brightness(brightness):
     applescript = f'tell application "System Events" to set brightness of every display to {brightness / 100}'
