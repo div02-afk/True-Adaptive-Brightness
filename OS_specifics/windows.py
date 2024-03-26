@@ -18,7 +18,7 @@ def set_brightness(brightness):
 
 # Function to calculate average light level
 
-def checkWindows():
+def check_windows():
     average_brightness = average_light_level()
     if(average_brightness > 100):
     	current_brightness = get_brightness()

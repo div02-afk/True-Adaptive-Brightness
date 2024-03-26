@@ -1,8 +1,8 @@
 import platform
 import time
-from windows import checkWindows
+from OS_specifics.windows import check_windows
 # from linux import checkLinux
-from macOS import checkMacOS
+from OS_specifics.macOS import check_macOS
    
 def detect_os():
     system = platform.system()
@@ -21,11 +21,11 @@ print("Operating System:", os_name)
 
 if(os_name == "Windows"):
     while True:
-        checkWindows()
+        check_windows()
         time.sleep(3)
 elif( os_name == "Linux"):
     print("Linux is not supported yet.")
 elif( os_name == "macOS"):
     while True:
-        checkMacOS()
+        check_macOS()
         time.sleep(3)

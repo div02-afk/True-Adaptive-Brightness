@@ -5,7 +5,7 @@ def set_brightness(brightness):
     applescript = f'tell application "System Events" to set brightness of every display to {brightness / 100}'
     subprocess.run(['osascript', '-e', applescript])
 
-def checkMacOS():
+def check_macOS():
     average_brightness = average_light_level()
     if(average_brightness > 100):
         set_brightness(30)
