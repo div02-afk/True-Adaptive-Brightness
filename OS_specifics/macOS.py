@@ -2,8 +2,11 @@ from common import average_light_level
 import subprocess
 # Function to set brightness using AppleScript
 def set_brightness(brightness):
-    applescript = f'tell application "System Events" to set brightness of every display to {brightness / 100}'
+    applescript = "\'tell application \"System Events\"\' -e \'key code 144\' -e \' end tell\'"
     subprocess.run(['osascript', '-e', applescript])
+    repeatScript = "!!"
+    for i in range(5):
+        subprocess.run(['osascript', '-e', repeatScript])
 
 def check_macOS():
     average_brightness = average_light_level()
