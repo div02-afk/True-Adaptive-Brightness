@@ -9,7 +9,7 @@
 <h2>To Install</h2>
 <ul>
   <li>Clone this repository.</li>
-  <li>Run <code>pip install -r requirements.txt</code>.</li>
+  <li>Run <code>pip install -r setup.txt</code>.</li>
   <li>Run <code>python main.py</code>.</li>
 </ul>
 
