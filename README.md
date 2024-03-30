@@ -3,7 +3,7 @@
   A simple Python script to change brightness based on the content on your screen.
 </p>
 <p>
-  Currently for Windows and MacOS. (Testing Linux)
+  Currently for Windows and MacOS. (working on Linux)
 </p>
 
 <h2>To Install</h2>
