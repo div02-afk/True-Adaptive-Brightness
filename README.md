@@ -23,3 +23,15 @@
     <li>Arch: <code>sudo pacman -S xorg-xrandr</code>.</li>
   </ul>
 </ul>
+
+<h2>For MacOS Users</h2>
+<ul>
+  <li>This uses <a href = "https://www.commandlinux.com/man-page/man1/xrandr.1.html">brightness</a> for brightness control.</li>
+  <li>To install brightness:</li>
+  <ul>
+    <code>git clone https://github.com/nriley/brightness.git
+cd brightness
+make
+sudo make install</code>
+  </ul>
+</ul>
