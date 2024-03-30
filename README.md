@@ -3,7 +3,7 @@
   A simple Python script to change brightness based on the content on your screen.
 </p>
 <p>
-  Currently for Windows only.(Testing MacOS and Linux)
+  Currently for Windows and MacOS. (Testing Linux)
 </p>
 
 <h2>To Install</h2>
@@ -23,3 +23,11 @@
     <li>Arch: <code>sudo pacman -S xorg-xrandr</code>.</li>
   </ul>
 </ul>
+<h2>For MacOS Users</h2>
+<ul>
+  <li>This uses <a href = "https://github.com/nriley/brightness">brightness</a> for brightness control.</li>
+  <li>To install brightness:</li>
+  <code>git clone https://github.com/nriley/brightness.git && cd brightness && make && sudo make install</code>
+
+</ul>
+
