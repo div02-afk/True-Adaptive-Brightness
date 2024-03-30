@@ -13,10 +13,10 @@ def get_brightness():
     brightness = c.WmiMonitorBrightness()[0].CurrentBrightness
     return brightness
 def set_brightness(brightness):
-    brightness = min(max(brightness, 0), 100)  # Ensure brightness is within valid range (0-100)
-    c.WmiMonitorBrightnessMethods()[0].WmiSetBrightness(brightness, 0)  # Second parameter 0 is for the brightness level source
+    brightness = min(max(brightness, 0), 100)
+    c.WmiMonitorBrightnessMethods()[0].WmiSetBrightness(brightness, 0)  
 
-# Function to calculate average light level
+
 
 def check_windows():
     average_brightness = average_light_level()

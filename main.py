@@ -15,7 +15,6 @@ def detect_os():
     else:
         return "Unknown"
 
-# Example usage
 time_delay = 1
 os_name = detect_os()
 print("Operating System:", os_name)
