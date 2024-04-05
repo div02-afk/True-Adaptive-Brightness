@@ -1,16 +1,6 @@
 import platform
 import time
-
-def detect_os():
-    system = platform.system()
-    if system == "Windows":
-        return "Windows"
-    elif system == "Linux":
-        return "Linux"
-    elif system == "Darwin":
-        return "macOS"
-    else:
-        return "Unknown"
+from common import detect_os
 
 time_delay = 1
 os_name = detect_os()
