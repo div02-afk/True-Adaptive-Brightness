@@ -10,7 +10,7 @@
 <ul>
   <li>Clone this repository.</li>
   <li>Run <code>pip install -r requirements.txt</code>.</li>
-  <li>Run <code>python main.py</code>.</li>
+  <li>Run <code>python sys_tray.py</code>.</li>
 </ul>
 
 <h2>For Linux Users</h2>
