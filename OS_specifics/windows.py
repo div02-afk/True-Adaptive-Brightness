@@ -20,14 +20,18 @@ def set_brightness(brightness):
 
 def check_windows():
     average_brightness = average_light_level()
+    
     if(average_brightness > 100):
-    	current_brightness = get_brightness()
-    	if(current_brightness > 50):
-	    	set_brightness(30)
+        current_brightness = get_brightness()
+        if(current_brightness > 50):
+            set_brightness(30)
     elif(average_brightness < 50):
-    	current_brightness = get_brightness()
-    	if(current_brightness < 50):
-        	set_brightness(80)
+        current_brightness = get_brightness()
+        if(current_brightness < 50):
+            set_brightness(80)
+    
+    
+    
     
     print("Average light level:", average_brightness)
     
